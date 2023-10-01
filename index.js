@@ -14,6 +14,9 @@ function layThongTinNhanVien() {
   var luongCoBan = getEle("luongCB").value;
   var chucVu = getEle("chucvu").value;
   var gioLam = getEle("gioLam").value;
+
+  kiemTraRong(taiKhoan, "tbTKNV", "Vui lòng ko bỏ trống tài khoản");
+
   //tạo đối tượng
   var nv = new NhanVien(
     taiKhoan,
